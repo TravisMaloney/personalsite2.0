@@ -7,7 +7,7 @@ app.set('view engine', 'html');
 
 // NEW CODE
 app.use('/vendor', express.static('/vendor'));
-app.use('/img', express.static('/img'));
+app.use('img', express.static('img'));
 app.use('/css', express.static('/css'));
 app.use('/js', express.static('/js'));
 
