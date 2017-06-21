@@ -18,6 +18,12 @@ app.get("/", function(req,res){
     res.render('index.html')
 });
 
+ app.get(/^(.+)$/, function(req, res){ 
+     console.log('static file request : ' + req.params);
+     res.sendfile( __dirname + req.params[0]); 
+ });
+
+
 app.listen(3000, () => {
 	console.log('Server Started on http://localhost:3000');
 	console.log('Press CTRL + C to stop server');
