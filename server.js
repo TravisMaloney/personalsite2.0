@@ -19,7 +19,7 @@ app.get("/", function(req,res){
 });
 
 app.listen(3000, () => {
-	console.log('Server Started on http://localhost:8080');
+	console.log('Server Started on http://localhost:3000');
 	console.log('Press CTRL + C to stop server');
 });
 
