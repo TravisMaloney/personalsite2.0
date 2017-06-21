@@ -18,7 +18,7 @@ app.get("/", function(req,res){
     res.render('index.html')
 });
 
-app.listen(80, () => {
+app.listen(3000, () => {
 	console.log('Server Started on http://localhost:8080');
 	console.log('Press CTRL + C to stop server');
 });
